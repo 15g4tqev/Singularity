@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" type="image/svg+xml" href="./logo.svg" />
+    <title>Singularity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="burger-menu">
+      <div class="burger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="sidebar">
+      <a href="#home" class="logo">
+        <img src="logo.svg" alt="Singularity Logo" class="logo-img" />
+        <h1>Singularity</h1>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">Про хакатон</a></li>
+        <li><a href="#targets">Что делать на хакатоне?</a></li>
+        <li><a href="#for-what">Задачи и цель мероприятия</a></li>
+        <li><a href="#main-target">Цель хакатон</a></li>
+        <li><a href="#why-participate">Зачем участвовать Singularity v1?</a></li>
+        <li><a href="#prizes">Денежные призы</a></li>
+        <li><a href="#timeline">Расписание</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <div class="nav-separator"></div>
+      <button class="nav-register-button">Зарегистрироваться</button>
+      <a href="https://t.me/your_telegram_chat" target="_blank" class="nav-telegram-button">
+        <img src="./icons/telegram-logo.svg" alt="Telegram" />
+      </a>
+    </div>
+
+    <div class="main-content">
+      <section id="home" class="hero-section">
+        <video class="hero-video" autoplay muted loop playsinline>
+          <source src="purple_hole.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-content">
+          <h1>Singularity v1<br />"Смарт-прорыв"</h1>
+          <p class="tagline">Создай то, что изменит все</p>
+          <div class="buttons">
+            <a href="#" class="btn purple-outline">Зарегистрироваться</a>
+            <a href="#" class="btn dark modal-trigger" data-modal="about">Подробнее о хакатоне</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="hero-section">
+        <div class="hero-content">
+          <p class="tagline">Про хакатон</p>
+          <h1>Singularity v1</h1>
+          <p class="core-text">
+            это международный хакатон *короткое описание мероприятия*
+          </p>
+        </div>
+      </section>
+
+      <section id="targets" class="hero-section">
+        <div class="targets-container">
+          <div class="targets-content">
+            <p class="tagline">Что делать на хакатоне?</p>
+            <p class="description">
+              Участникам предстоит объединиться в команды и решить ряд
+              технологических вызовов, направленных на разработку инновационных
+              решений для блокчейн-инфраструктуры
+            </p>
+            <ul class="targets-list">
+              <li>Opening Разработать безопасную блокчейн-инфраструктуру</li>
+              <li>Разработать безопасную блокчейн-инфраструктуру</li>
+              <li>Разработать безопасную блокчейн-инфраструктуру</li>
+            </ul>
+          </div>
+          <div class="targets-media">
+            <video class="targets-video" autoplay muted loop playsinline>
+              <source src="purple_sphere.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <section id="for-what" class="hero-section">
+        <div class="hero-content">
+          <div class="tagline">Про задачи</div>
+          <div class="description-text">
+            <span span class="secondary">Командам предстоит выбрать</span><span class="highlight"> одно из направлений</span> <span class="secondary"> для разработки.</span>
+          </div>
+          <div class="for-what-grid">
+            <div class="for-what-item charity">
+              <div class="for-what-header">
+                <span class="for-what-icon">
+                  <img src="./icons/charity-hand.svg" alt="Charity Icon" />
+                </span>
+                <span class="for-what-number">1</span>
+              </div>
+              <h3>Блокчейн для благотворительности</h3>
+              <p>Разработайте прозрачную систему, которая позволит отслеживать движение средств в реальном времени, обеспечивая доверие доноров и получателей помощи</p>
+            </div>
+            <div class="for-what-item credit">
+              <div class="for-what-header">
+                <span class="for-what-icon">
+                  <img src="./icons/dollar.svg" alt="Credit Icon" />
+                </span>
+                <span class="for-what-number">2</span>
+              </div>
+              <h3>Платформа взаимного кредитования</h3>
+              <p>Создайте децентрализованную платформу, которая упростит процесс выдачи и получения займов между пользователями без посредников</p>
+            </div>
+            <div class="for-what-item voting">
+              <div class="for-what-header">
+                <span class="for-what-icon">
+                  <img src="./icons/shield.svg" alt="Voting Icon" />
+                </span>
+                <span class="for-what-number">3</span>
+              </div>
+              <h3>Безопасное голосование на блокчейне</h3>
+              <p>Разработайте решение, которое гарантирует анонимность и неизменность голосов, защищая выбор от мошенничества и манипуляций</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="main-target" class="hero-section">
+        <div class="main-target-content">
+          <img src="./icons/arrow.svg" alt="Arrow Icon" class="main-target-icon" />
+          <p class="yellow-tagline">Цель хакатона</p>
+          <p class="main-target-text">Разработать универсальную блокчейн-инфраструктуру, способную обеспечить прозрачность, безопасность и доверие во взаимодействии между людьми и организациями в сферах благотворительности, взаимного кредитования и голосования.</p>
+        </div>
+      </section>
+
+      <section id="why-participate" class="hero-section">
+        <div class="hero-content">
+          <h1><span class="opacity-40">Зачем участвовать</span><br />в Singularity v1?</h1>
+          <ul class="targets-list">
+            <li>Получите опыт разработки реальных блокчейн-решений</li>
+            <li>Создайте проект, который может изменить мир</li>
+            <li>Найдите единомышленников и партнеров</li>
+            <li>Выиграйте ценные призы и получите поддержку</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="prizes" class="hero-section">
+        <div class="hero-content">
+          <h1>Денежные призы</h1>
+          <div class="prizes-grid">
+            <div class="prize-item">
+              <p class="prize-number">1 место</p>
+              <p class="tagline">150 000 рублей</p>
+            </div>
+            <div class="prize-item">
+              <p class="prize-number">2 место<p>
+              <p class="tagline">100 000 рублей</p>
+            </div>
+            <div class="prize-item">
+              <p class="prize-number">3 место</p>
+              <p class="tagline">50 000 рублей</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="timeline" class="hero-section">
+        <div class="hero-content">
+          <h1>Расписание</h1>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-separator">///</div>
+              <div class="datetime">15 мая 2024, 10:00</div>
+              <h3>Начало регистрации</h3>
+              <p class="description">Открытие регистрации для участников хакатона. Заполните форму и присоединяйтесь к сообществу инноваторов.</p>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-separator">///</div>
+              <div class="datetime">1 июня 2024, 12:00</div>
+              <h3>Старт хакатона</h3>
+              <p class="description">Официальное начало соревнований. Презентация задач и формирование команд.</p>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-separator">///</div>
+              <div class="datetime">3 июня 2024, 18:00</div>
+              <h3>Завершение</h3>
+              <p class="description">Презентация проектов и награждение победителей.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="hero-section">
+        <div class="hero-content">
+          <h1 class="opacity-40">Остались вопросы?</h1>
+          <div class="faq-container">
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Как зарегистрироваться на хакатон?</span>
+                <img src="./icons/down-arrow.svg" alt="Arrow" class="faq-arrow">
+              </div>
+              <div class="faq-answer">
+                <p>Для регистрации на хакатон необходимо заполнить форму на сайте, указав свои контактные данные и информацию о команде.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Какие требования к участникам?</span>
+                <img src="./icons/down-arrow.svg" alt="Arrow" class="faq-arrow">
+              </div>
+              <div class="faq-answer">
+                <p>Участники должны иметь базовые знания в области блокчейн-технологий и программирования. Команды могут состоять из 2-5 человек.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Какое оборудование нужно для участия?</span>
+                <img src="./icons/down-arrow.svg" alt="Arrow" class="faq-arrow">
+              </div>
+              <div class="faq-answer">
+                <p>Для участия необходим компьютер с доступом в интернет и установленным необходимым программным обеспечением для разработки.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-content">
+          <a href="#home" class="footer-logo">
+            <img src="logo.svg" alt="Singularity Logo" class="footer-logo-img" />
+            <h2>Singularity</h2>
+          </a>
+          <a href="https://t.me/your_telegram_chat" target="_blank" class="telegram-button">
+            <img src="./icons/telegram-logo.svg" alt="Telegram" />
+            <span>Telegram чат</span>
+          </a>
+        </div>
+        <div class="footer-links">
+          <button class="modal-trigger" data-modal="rules">Правила соревнований</button>
+          <button class="modal-trigger" data-modal="privacy">Политика конфиденциальности</button>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Modal Windows -->
+    <div id="register-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Регистрация</h2>
+          <button class="modal-close">
+            <img src="./icons/close-cross.svg" alt="Close" />
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="register-form" class="register-form">
+            <div class="form-group">
+              <label for="fullname">ФИО</label>
+              <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-group">
+              <label for="team">Название команды</label>
+              <input type="text" id="team" name="team" required>
+            </div>
+            <div class="form-group">
+              <label for="role">Роль в команде</label>
+              <input type="text" id="role" name="role" required>
+            </div>
+            <div class="form-group">
+              <label for="university">ВУЗ</label>
+              <input type="text" id="university" name="university" required>
+            </div>
+            <div class="form-group">
+              <label for="course">Курс и направление обучения</label>
+              <input type="text" id="course" name="course" required>
+            </div>
+            <div class="form-group">
+              <label for="telegram">Ник в телеграм</label>
+              <input type="text" id="telegram" name="telegram" required>
+            </div>
+            <button type="submit" class="submit-button">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="rules-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Правила соревнований</h2>
+          <button class="modal-close">
+            <img src="./icons/close-cross.svg" alt="Close" />
+          </button>
+        </div>
+        <div class="modal-body">
+          <h3>1. Общие положения</h3>
+          <p>1.1. Настоящие правила регулируют порядок проведения хакатона Singularity v1.</p>
+          <p>1.2. Участники обязуются соблюдать все правила и требования организаторов.</p>
+          
+          <h3>2. Условия участия</h3>
+          <p>2.1. К участию допускаются команды от 2 до 5 человек.</p>
+          <p>2.2. Каждый участник может быть членом только одной команды.</p>
+          
+          <h3>3. Требования к проектам</h3>
+          <p>3.1. Проекты должны соответствовать выбранному направлению.</p>
+          <p>3.2. Все решения должны быть реализованы в рамках хакатона.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="privacy-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Политика конфиденциальности</h2>
+          <button class="modal-close">
+            <img src="./icons/close-cross.svg" alt="Close" />
+          </button>
+        </div>
+        <div class="modal-body">
+          <h3>1. Сбор информации</h3>
+          <p>1.1. Мы собираем только необходимую информацию для участия в хакатоне.</p>
+          <p>1.2. Все данные обрабатываются в соответствии с законодательством.</p>
+          
+          <h3>2. Использование данных</h3>
+          <p>2.1. Ваши данные используются только для организации мероприятия.</p>
+          <p>2.2. Мы не передаем информацию третьим лицам.</p>
+          
+          <h3>3. Безопасность</h3>
+          <p>3.1. Мы принимаем все необходимые меры для защиты ваших данных.</p>
+          <p>3.2. Доступ к информации имеют только уполномоченные лица.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="about-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Подробнее о хакатоне</h2>
+          <button class="modal-close">
+            <img src="./icons/close-cross.svg" alt="Close" />
+          </button>
+        </div>
+        <div class="modal-body">
+          <h3>О мероприятии</h3>
+          <p>Singularity v1 — это международный хакатон, посвящённый инновациям в области блокчейн-технологий. Здесь вы сможете проявить себя, найти единомышленников и создать проект, который может изменить будущее.</p>
+          <h3>Что вас ждёт?</h3>
+          <ul>
+            <li>Интересные задачи и вызовы</li>
+            <li>Работа в команде</li>
+            <li>Поддержка менторов</li>
+            <li>Призы и новые знакомства</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
